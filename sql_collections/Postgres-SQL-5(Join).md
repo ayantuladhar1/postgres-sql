@@ -1,54 +1,8 @@
-# AWS S3 – Glue – Athena Data Engineering Pipeline
-
-## 📌 Overview
-This project demonstrates a cloud-native data engineering pipeline built
-entirely on AWS using S3, AWS Glue, and Amazon Athena.
-
-The pipeline ingests raw customer data, applies data quality rules using
-AWS Glue (PySpark), and produces analytics-ready datasets queried using Athena.
-
----
-
-## 🛠 AWS Services Used
-- Amazon S3 (Data Lake)
-- AWS Glue (ETL + Data Catalog)
-- Amazon Athena (SQL Analytics)
-
----
-
-## 🏗 Architecture
-S3 (Raw) → AWS Glue → S3 (Curated) → Glue Catalog → Athena
-
----
-
-## 📂 Project Structure
-<pre>
-aws-s3-glue-athena-pipeline/
-├── data/raw/customers.csv
-├── glue_jobs/customer_etl_job.py
-├── athena/sample_queries.sql
-├── architecture/pipeline_overview.md
-└── README.md
-</pre>
-
----
-
-## ✅ Data Quality Rules
-- customer_id must not be null
-- email must contain '@'
-- country must not be empty
-- signup_date cast to DATE
-
----
-
-## 🚀 How to Run
-1. Upload CSV to S3 raw bucket
-2. Create AWS Glue job using provided script
-3. Run Glue job
-4. Query data using Athena
-
----
-
-## 📊 Sample Analytics
-```sql
-SELECT country, COUNT(*) FROM curated_customers GROUP BY country;
+# SQL-5-(JOIN)
+* JOIN
+* A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+* Different Types of JOINS in PostgresSQL:
+* 1. INNER JOIN: Returns records that have matching values in both tables.
+* 2. LEFT JOIN: Returns all records from the left table, and match records from the right table.
+  3. RIGHT JOIN: Retuens all records from right table, and match records from the left table.
+  4. FULL JOIN: Returns all records when there is a match in either left or right table. 
