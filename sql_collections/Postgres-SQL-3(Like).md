@@ -1,54 +1,42 @@
-# AWS S3 – Glue – Athena Data Engineering Pipeline
-
-## 📌 Overview
-This project demonstrates a cloud-native data engineering pipeline built
-entirely on AWS using S3, AWS Glue, and Amazon Athena.
-
-The pipeline ingests raw customer data, applies data quality rules using
-AWS Glue (PySpark), and produces analytics-ready datasets queried using Athena.
-
----
-
-## 🛠 AWS Services Used
-- Amazon S3 (Data Lake)
-- AWS Glue (ETL + Data Catalog)
-- Amazon Athena (SQL Analytics)
-
----
-
-## 🏗 Architecture
-S3 (Raw) → AWS Glue → S3 (Curated) → Glue Catalog → Athena
-
----
-
-## 📂 Project Structure
-<pre>
-aws-s3-glue-athena-pipeline/
-├── data/raw/customers.csv
-├── glue_jobs/customer_etl_job.py
-├── athena/sample_queries.sql
-├── architecture/pipeline_overview.md
-└── README.md
-</pre>
-
----
-
-## ✅ Data Quality Rules
-- customer_id must not be null
-- email must contain '@'
-- country must not be empty
-- signup_date cast to DATE
-
----
-
-## 🚀 How to Run
-1. Upload CSV to S3 raw bucket
-2. Create AWS Glue job using provided script
-3. Run Glue job
-4. Query data using Athena
-
----
-
-## 📊 Sample Analytics
+# SQL-3-(Like)
+* LIKE:
+* The like operator is used in a WHERE clause to search for a specified pattern in a column.
+* There are two wildcards often used in conjuntion with the LIKE operator.
+* % The percent sign represents zero, one, or multiple characters.
+* _ The underscore sign represents one, single character.
+* Starts with:
+* To return records that start with a specific letter or phrase, add the % at the end of the letter or phrase.
+* Return all customers with a name that contains the letter 'A':
 ```sql
-SELECT country, COUNT(*) FROM curated_customers GROUP BY country;
+SELECT * FROM customers
+WHERE customer_name LIKE 'A%';
+```
+* Contains:
+* To return records that contain a specific letter of phrase, add the % both before and after the letter or phrase.
+* Return all customers with a name that contains the letter 'A':
+```sql
+SELECT * FROM customers
+WHERE customer_name LIKE '%A%';
+```
+* ILIKE:
+* Note: The LIKE operator is case sensitive, if you want to do a case insensitive search, use the ILIKE operator instead.
+* Return all customers with a name that contains the letter 'A' or 'a':
+```sql
+SELECT * FROM customers
+WHERE customer_name ILIKE '%A%';
+```
+* Ends with:
+* To return records that end with a specified letter of phrase, add the % before the letter or phrase.
+* Return all customers with a name that ends with the phrase 'en':
+```sql
+SELECT * FROM customers
+WHERE customer_name LIKE '%en';
+```
+* The Underscore _ WildCard
+* The _ wildcard represents a single character.
+* It can be any character or number, but each _ represents one, and only one character.
+* Return all customers from a city that starts with 'L' followed by one wildcard character, then 'nd' and then two wildcard caharcters:
+```sql
+SELECT * FROM customers
+WHERE city LIKE 'L_nd__';
+```
