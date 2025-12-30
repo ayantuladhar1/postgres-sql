@@ -69,7 +69,7 @@ FROM products;
 * Return the lowest price, and name the column lowest_price:
 ```sql
 SELECT MIN(price) AS lowest_price
-FROM products
+FROM products;
 ```
 * COUNT:
 * The COUNT() function returns the number if rows that matches a specified criterion.
@@ -93,7 +93,7 @@ WHERE city = 'London';
 * Return the total amount of ordered items:
 ```sql
 SELECT SUM(quantity)
-FROM order_details
+FROM order_details;
 ```
 * NOTE: NULL Values are ignored
 * AVG
