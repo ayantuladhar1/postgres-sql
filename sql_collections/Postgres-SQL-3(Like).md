@@ -1,12 +1,12 @@
 # SQL-3-(Like)
 * LIKE:
-* The like operator is used in a WHERE clause to search for a specified pattern in a column.
-* There are two wildcards often used in conjuntion with the LIKE operator.
-* % The percent sign represents zero, one, or multiple characters.
-* _ The underscore sign represents one, single character.
+*   The like operator is used in a WHERE clause to search for a specified pattern in a column.
+*   There are two wildcards often used in conjuntion with the LIKE operator.
+*     % The percent sign represents zero, one, or multiple characters.
+*     _ The underscore sign represents one, single character.
 * Starts with:
-* To return records that start with a specific letter or phrase, add the % at the end of the letter or phrase.
-* Return all customers with a name that contains the letter 'A':
+*   To return records that start with a specific letter or phrase, add the % at the end of the letter or phrase.
+*   Return all customers with a name that contains the letter 'A':
 ```sql
 SELECT * FROM customers
 WHERE customer_name LIKE 'A%';
