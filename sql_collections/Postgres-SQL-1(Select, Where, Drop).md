@@ -1,4 +1,4 @@
-# Create DB name and Table:
+# SQL1 - (SELECT, WHERE, DROP)
 * DB name: practice
 ```sql
 CREATE TABLE cars (
