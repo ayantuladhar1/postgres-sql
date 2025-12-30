@@ -1,4 +1,10 @@
 # SQL-2-(Count, Min, Max, Sun, Avg)
+* Create Tables:
+```sql
+CREATE TABLE customers (customer_name VARCHAR(255), customer_id int, country VARCHAR(255));
+CREATE TABLE products (price int);
+CREATE TABLE order_details (quantity int);
+```
 * Select colunn names:
 ```sql
 SELECT customer_name, country FROM customers;
