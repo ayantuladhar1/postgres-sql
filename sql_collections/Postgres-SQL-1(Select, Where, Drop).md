@@ -40,7 +40,13 @@ DROP COLUMN color;
 ```
 <img width="415" height="192" alt="image" src="https://github.com/user-attachments/assets/818f2832-ea0d-475f-97fa-4f8d361ccaa9" />
 
-* Delete Statement, Deletes all records where brand is 'Volvo':
+* Delete Statement,
+* Delete entire rows if WHERE not specified, keeps the table sturcture but data is gone.
+* Deletes all records where brand is 'Volvo':
+```sql
+DELET FROM cars;
+```
+* OR
 ```sql
 DELETE FROM cars
 WHERE brand = 'Ford';
@@ -48,6 +54,8 @@ WHERE brand = 'Ford';
 <img width="424" height="167" alt="image" src="https://github.com/user-attachments/assets/0c0c72f8-d470-4dc6-8726-395f220c6e73" />
 
 * Drop Table Statement, Delete the cars table:
+* Table is completly gone
+* Instant Speed
 ```sql
 DROP TABLE cars;
 ```
@@ -58,7 +66,8 @@ ALTER COLUMN year TYPE VARCHAR(4);
 ```
 <img width="465" height="52" alt="image" src="https://github.com/user-attachments/assets/b103eedb-bff1-4779-bad2-1cd456e8879e" />
 
-* Select Statement, To select from cars table:
+* Truncate Statement, Removes all rows fast but keeps table structure:
+* WHERE clause is not allowed.
 ```sql
-SELECT * FROM cars;
+TRUNCATE TABLE cars;
 ```
