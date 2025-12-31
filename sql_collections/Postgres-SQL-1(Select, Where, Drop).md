@@ -18,27 +18,35 @@ SELECT * FROM cars;
 ```sql
 SELECT brand, year FROM cars;
 ```
+<img width="189" height="64" alt="image" src="https://github.com/user-attachments/assets/4a06d0f7-8237-4fdb-a586-ca5ba4ddbefa" />
+
 * Alter Table Statement, add a column name color:
 ```sql
 ALTER TABLE cars ADD color VARCHAR(255);
 ```
 * Update Statement:
 ```sql
-UPDATE cars SET color = 'red' WHERE brand = 'Volvo';
+UPDATE cars SET color = 'red' WHERE brand = 'Mazda';
 SELECT * FROM cars;
 SET color = 'red'
 WHERE brand = 'Ford';
 ```
+<img width="544" height="190" alt="image" src="https://github.com/user-attachments/assets/39b72c6c-7e03-4e12-a6e0-4a11408ee098" />
+
 * Drop column, removes the color column:
 ```sql
 ALTER TABLE cars
 DROP COLUMN color;
 ```
+<img width="415" height="192" alt="image" src="https://github.com/user-attachments/assets/818f2832-ea0d-475f-97fa-4f8d361ccaa9" />
+
 * Delete Statement, Deletes all records where brand is 'Volvo':
 ```sql
 DELETE FROM cars
-WHERE brand = 'Volvo';
+WHERE brand = 'Ford';
 ```
+<img width="424" height="167" alt="image" src="https://github.com/user-attachments/assets/0c0c72f8-d470-4dc6-8726-395f220c6e73" />
+
 * Drop Table Statement, Delete the cars table:
 ```sql
 DROP TABLE cars;
