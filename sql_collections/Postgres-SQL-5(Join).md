@@ -61,9 +61,9 @@ CROSS JOIN categories
 * UNION:
 * The UNION operaator is used to combine the result-set of two or more queries.
 * The queries in the union must follow these rules:
-1. They must have the same number of columns.
-2. The columns must have the same data types.
-3. The columns must be in the same order.
+* 1. They must have the same number of columns.
+* 2. The columns must have the same data types.
+* 3. The columns must be in the same order.
 * Combine products and testproducts using UNION operator:
 ```sql
 SELECT product_id, product_name
