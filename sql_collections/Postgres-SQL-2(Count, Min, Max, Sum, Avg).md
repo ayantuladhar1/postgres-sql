@@ -118,7 +118,7 @@ WHERE country = 'London';
 ```
 <img width="120" height="83" alt="image" src="https://github.com/user-attachments/assets/53f66433-7d9e-435a-a579-f4bc7178e40e" />
 
-# SUM
+# SUM:
 * The SUM() function returns the total sum of a numeric column.
 * The following SQL statement finds the sum of the quantity fields in the order_details table:
 * Return the total amount of ordered items:
@@ -129,7 +129,7 @@ FROM order_details;
 <img width="118" height="73" alt="image" src="https://github.com/user-attachments/assets/618a7c69-c4b8-446c-9c62-66c5b49a0d0b" />
 
 * NOTE: NULL Values are ignored
-# AVG
+# AVG:
 * The AVG() function returns the average value of a numeric column.
 * Return the average price of all the products in the products table:
 ```sql
