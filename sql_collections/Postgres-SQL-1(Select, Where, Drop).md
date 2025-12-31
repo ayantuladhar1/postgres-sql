@@ -8,10 +8,12 @@ CREATE TABLE cars (
 );
 
 INSERT INTO cars (brand, model, year)
-VALUES ('Ford', 'Mustang', 1964);
+VALUES ('Ford', 'Mustang', 1985);
 
 SELECT * FROM cars;
 ```
+<img width="396" height="65" alt="image" src="https://github.com/user-attachments/assets/82feeb26-b47b-47a0-85e4-b2a1a8362efe" />
+
 * Specify the columns
 ```sql
 SELECT brand, year FROM cars;
