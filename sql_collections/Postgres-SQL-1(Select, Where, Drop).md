@@ -56,6 +56,8 @@ DROP TABLE cars;
 ALTER TABLE cars
 ALTER COLUMN year TYPE VARCHAR(4);
 ```
+<img width="465" height="52" alt="image" src="https://github.com/user-attachments/assets/b103eedb-bff1-4779-bad2-1cd456e8879e" />
+
 * Select Statement, To select from cars table:
 ```sql
 SELECT * FROM cars;
