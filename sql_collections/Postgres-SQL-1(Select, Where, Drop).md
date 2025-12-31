@@ -44,7 +44,7 @@ DROP COLUMN color;
 * Delete entire rows if WHERE not specified, keeps the table sturcture but data is gone.
 * Deletes all records where brand is 'Volvo':
 ```sql
-DELET FROM cars;
+DELETE FROM cars;
 ```
 # OR
 ```sql
