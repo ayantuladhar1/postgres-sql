@@ -18,7 +18,8 @@ SELECT * FROM cars;
 ```sql
 SELECT brand, year FROM cars;
 ```
-<img width="189" height="64" alt="image" src="https://github.com/user-attachments/assets/4a06d0f7-8237-4fdb-a586-ca5ba4ddbefa" />
+<img width="330" height="73" alt="image" src="https://github.com/user-attachments/assets/e754cfef-0d05-4b8a-96be-1bbc2834f9d4" />
+
 
 # Alter Table Statement, add a column name color:
 ```sql
