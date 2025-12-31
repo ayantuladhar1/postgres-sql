@@ -1,5 +1,5 @@
 # SQL-1-(SELECT, WHERE, DROP)
-* DB name: practice
+# DB name: practice
 ```sql
 CREATE TABLE cars (
   brand VARCHAR(255),
