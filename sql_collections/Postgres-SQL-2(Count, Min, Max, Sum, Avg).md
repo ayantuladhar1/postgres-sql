@@ -1,4 +1,4 @@
-# SQL-2-(Count, Min, Max, Sun, Avg)
+# SQL-2-(Count, Min, Max, Sum, Avg)
 # Create Tables:
 ```sql
 CREATE TABLE customers (customer_name VARCHAR(255), customer_id int, country VARCHAR(255));
