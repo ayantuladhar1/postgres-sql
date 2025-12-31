@@ -42,7 +42,7 @@ DROP COLUMN color;
 <img width="415" height="192" alt="image" src="https://github.com/user-attachments/assets/818f2832-ea0d-475f-97fa-4f8d361ccaa9" />
 
 # Delete Statement,
-* Delete entire rows if WHERE not specified, keeps the table sturcture but data is gone.
+* Delete entire rows if WHERE not specified, keeps the table structure but data is gone.
 * Deletes all records where brand is 'Volvo':
 ```sql
 DELETE FROM cars;
