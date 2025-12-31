@@ -74,7 +74,7 @@ FROM testproducts
 ORDER BY product_id;
 ```
 * UNION vs UNION ALL:
-* With the UNION operator, if some rows in the two queries retuens the exact same result, only one row will be listed, because UNION selects only distict values.
+* With the UNION operator, if some rows in the two queries returns the exact same result, only one row will be listed, because UNION selects only distict values.
 * Use UNION ALL to return duplicate values.
 * Let's make some changes to the queries, so that we have duplicate values in the result:
 * UNION:
