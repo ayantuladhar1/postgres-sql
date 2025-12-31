@@ -99,7 +99,7 @@ FROM products;
 <img width="152" height="73" alt="image" src="https://github.com/user-attachments/assets/8f6336a4-9365-40f6-91da-1e31254b7ccf" />
 
 # COUNT:
-* The COUNT() function returns the number if rows that matches a specified criterion.
+* The COUNT() function returns the number of rows that matches a specified criterion.
 * If the specified criterion is a column name, the COUNT() function returns the number of columns with that name.
 * Return the number of customers from the customers table:
 ```sql
